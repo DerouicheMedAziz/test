@@ -22,38 +22,33 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
             
         <style>
-            .bloc{
-                position: absolute;
-                margin-top: 20px;
-                left: 50px;
-
-                width: 250px;
-                height: 50px;
-
-                
-                background: linear-gradient(to right, red 50%, white 50%);
-                background-size: 200% 100%;
-                background-position: right bottom;
-                /*transition: all 2s ease;*/
+            .cell{
+                display: inline-block;
+                margin-left: -4px;
+                background-color: red;
+            }
+            .cell[text=]{
+                margin-left: 0px;
+                width: 25%; 
+            }
+            .cell:nth-child(2){
+                width: 30%;
+            }
+            .cell:nth-child(3){
+                width: 30%;
             }
         </style>
         <script type="text/javascript">
             $(document).ready(function(){
-                $(".bloc").animate({backgroundPosition: "0%"}, 500);
+                console.log("Hallo !");
             });
         
         </script>
         
     </head>
     <body>
-        <h1>H1</h1>
-        <h2>H2</h2>
-        <button>Button</button>
-        
-        <div class="formulaire">
-            <span>texte</span></br>
-            <input type="radio">radio</input></br>
-            <input type="radio">radio</input></br>
-        </div>
+        <span class="cell">span 1</span>
+        <span class="cell">span 2</span>
+        <span class="cell">span 3</span>
     </body>
 </html>
