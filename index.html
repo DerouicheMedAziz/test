@@ -22,50 +22,41 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
             
         <style>
-            .cell{
-                display: inline-block;
-                margin-left: -4px;
-                background-color: red;
+            td{
+                border: 1px solid black;
             }
-            .cell[text=]{
-                margin-left: 0px;
-                width: 25%; 
+            .title{
+                width: 60%;
             }
-            .cell:nth-child(2){
-                width: 30%;
+            .circle{
+                width: 20%;
             }
-            .cell:nth-child(3){
-                width: 30%;
-            }
-            footer{
-                background-color: green;
-            }
+            .cer-border{
+    position: relative;
+    display: inline-block;
+                
+                margin-right: 5px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #27ae60;
+    background-color: none;
+    color: #fff;
+}
         </style>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                console.log("Hallo !");
-            });
-        
-        </script>
-        
     </head>
     <body>
-        <header>
-            <h1>HEADER</h1>
-            <p>texte texte texte</p>
-        </header>
-        <span class="cell">span 1</span>
-        <span class="cell">span 2</span>
-        <span class="cell">span 3</span>
-<<<<<<< HEAD
-        <button>button</button>
-        <footer>
-            <h1>footer</h1>
-        </footer>
-=======
-        <section>
-            <h3>section</h3>
-        </section>
->>>>>>> section
+        <table>
+            <tr>
+                <td class="title"><h4>Title</h4></td>
+                <td class="circle"><div class="cer-border"></div></td>
+                <td class="circle"><div class="cer-border"></div></td>
+            </tr>
+            <tr>
+                <td class="title"><h4>Title</h4></td>
+                <td class="circle"><div class="cer-border"></div></td>
+                <td class="circle"><div class="cer-border"></div></td>
+            </tr>
+        </table>
     </body>
 </html>
