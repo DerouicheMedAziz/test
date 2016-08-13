@@ -1,0 +1,34 @@
+// Variables
+$i : 1;
+
+@function width-model($width){
+    @if $width == titel{
+        @return (300px);
+    }
+    @if $width == paragraph{
+        @return (800px);
+    }
+    @if $width == item{
+        @return (150px);
+    }
+}
+
+@for $i from 1 through 3{
+    p:nth-of-type(#{$i}){
+        padding-left: $i * 100px;
+        padding-right: $i * 100px;
+    }
+}
+
+@while $i < 4{
+    p:nth-of-type(#{$i}){
+        margin-bottom: 25px;
+    }
+    $i : $i + 1;
+}
+
+
+#{$section-work}{
+    background-color: red;
+    font-size: 12px;
+}
